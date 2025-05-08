@@ -1,0 +1,12 @@
+# Unity default ignore
+/Library/
+/obj/
+/UserSettings/
+/Logs/
+/.idea/
+*.user
+*.pidb
+*.pdb
+*.dll
+*.tgz
+*.unitypackage
