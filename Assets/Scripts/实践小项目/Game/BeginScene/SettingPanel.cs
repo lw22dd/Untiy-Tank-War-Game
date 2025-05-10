@@ -19,26 +19,32 @@ public class SettingPanel : BasePanel<SettingPanel>
             HideMe();
             BeginPanel.Instance.ShowMe();
         };
-        togMusic.changeValue += (value) =>
-        {
-        };
-        togSound.changeValue += (value) =>
-        {
-        };
-        sliderMusic.changeValue += (value) =>
-        {
+        // 其实核心就是改变MusicData中的值，然后通过PlayerPrefsDataMgr保存到本地
+        togMusic.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseSound(value);
 
-        };
-        sliderSound.changeValue += (value) =>
-        {
+        togSound.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseSound(value);
+ 
+        sliderMusic.changeValue += (value) => GameDataMgr.Instance.ChangeBkValue(value);
 
-        };
+        sliderSound.changeValue += (value) => GameDataMgr.Instance.ChangeSoundValue(value);
+
         HideMe();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdatePanelInfo()
     {
+        MusicData MusicData = GameDataMgr.Instance.MusicData;    
         
+        // 设置音效和背景音乐开关
+        togMusic.isSel = MusicData.isOpenBK;
+        togSound.isSel = MusicData.isOpenSound;
+        sliderMusic.nowValue = MusicData.bkValue;
+        sliderSound.nowValue = MusicData.soundValue;
+    }
+    public override void ShowMe()
+    {
+        base.ShowMe();
+        //  每次显示Setting时更新面板信息
+        UpdatePanelInfo();
     }
 }

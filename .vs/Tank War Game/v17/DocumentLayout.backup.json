@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\UE_Unity\\UnityProject\\Tank War Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BBEC456-1115-6055-E39D-A9725895CF43}|Assembly-CSharp.csproj|e:\\ue_unity\\unityproject\\tank war game\\assets\\scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\game\\data\\musicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BBEC456-1115-6055-E39D-A9725895CF43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\game\\data\\musicdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BBEC456-1115-6055-E39D-A9725895CF43}|Assembly-CSharp.csproj|e:\\ue_unity\\unityproject\\tank war game\\assets\\scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\game\\beginscene\\beginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBEC456-1115-6055-E39D-A9725895CF43}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\game\\beginscene\\beginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,19 +19,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MusicData.cs",
-              "DocumentMoniker": "E:\\UE_Unity\\UnityProject\\Tank War Game\\Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\Data\\MusicData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\Data\\MusicData.cs",
-              "ToolTip": "E:\\UE_Unity\\UnityProject\\Tank War Game\\Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\Data\\MusicData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\Data\\MusicData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:58:56.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "BeginPanel.cs",
               "DocumentMoniker": "E:\\UE_Unity\\UnityProject\\Tank War Game\\Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\BeginScene\\BeginPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\\u5B9E\u8DF5\u5C0F\u9879\u76EE\\Game\\BeginScene\\BeginPanel.cs",

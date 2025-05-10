@@ -32,7 +32,9 @@ public class BeginPanel : BasePanel<BeginPanel>
         btnRank.clickEvent += (() =>
         {
             //打开排行榜面板
-            //RankPanel.Instance.ShowMe();
+            RankPanel.Instance.ShowMe();
+            HideMe();
+
         });
     }
 
