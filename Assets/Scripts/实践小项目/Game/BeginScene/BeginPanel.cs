@@ -21,7 +21,8 @@ public class BeginPanel : BasePanel<BeginPanel>
         btnSetting.clickEvent += (() =>
         {
             //打开设置面板
-            //SettingPanel.Instance.ShowMe();
+            SettingPanel.Instance.ShowMe();
+            HideMe();
         });
         btnQuit.clickEvent += (() =>
         {

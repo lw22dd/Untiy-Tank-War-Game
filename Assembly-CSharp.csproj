@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\RotateObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUILabel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Base\CustomGUIPos.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUITexture.cs" />
     <Compile Include="Assets\Scripts\实践小项目\PlayerPrefsDataMgr\PlayerPrefsDataMgr.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUISlider.cs" />
