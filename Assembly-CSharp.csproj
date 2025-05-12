@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\实践小项目\Game\Data\MusicData.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\Data\RankInfo.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIToggle.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Base\CustomGUIControl.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIButton.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\RotateObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUILabel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Base\CustomGUIPos.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BKMusic.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUITexture.cs" />
     <Compile Include="Assets\Scripts\实践小项目\PlayerPrefsDataMgr\PlayerPrefsDataMgr.cs" />

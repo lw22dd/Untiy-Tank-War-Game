@@ -24,11 +24,6 @@ public class BeginPanel : BasePanel<BeginPanel>
             SettingPanel.Instance.ShowMe();
             HideMe();
         });
-        btnQuit.clickEvent += (() =>
-        {
-            //退出游戏
-            Application.Quit();
-        });
         btnRank.clickEvent += (() =>
         {
             //打开排行榜面板
@@ -36,11 +31,12 @@ public class BeginPanel : BasePanel<BeginPanel>
             HideMe();
 
         });
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        btnQuit.clickEvent += (() =>
+        {
+            //退出游戏
+            Application.Quit();
+        });
         
     }
+
 }

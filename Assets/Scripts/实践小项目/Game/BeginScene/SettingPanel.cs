@@ -20,7 +20,7 @@ public class SettingPanel : BasePanel<SettingPanel>
             BeginPanel.Instance.ShowMe();
         };
         // 其实核心就是改变MusicData中的值，然后通过PlayerPrefsDataMgr保存到本地
-        togMusic.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseSound(value);
+        togMusic.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseBK(value);
 
         togSound.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseSound(value);
  
