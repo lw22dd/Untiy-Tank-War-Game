@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingPanel : BasePanel<SettingPanel>
 {
@@ -17,7 +18,8 @@ public class SettingPanel : BasePanel<SettingPanel>
         btnClose.clickEvent += () =>
         {
             HideMe();
-            BeginPanel.Instance.ShowMe();
+            if(SceneManager.GetActiveScene().name == "BeginScene")
+             BeginPanel.Instance.ShowMe();
         };
         // 其实核心就是改变MusicData中的值，然后通过PlayerPrefsDataMgr保存到本地
         togMusic.changeValue += (value) => GameDataMgr.Instance.OpenOrCloseBK(value);
@@ -46,5 +48,10 @@ public class SettingPanel : BasePanel<SettingPanel>
         base.ShowMe();
         //  每次显示Setting时更新面板信息
         UpdatePanelInfo();
+    }
+    public override void HideMe()
+    {
+        base.HideMe();
+        Time.timeScale = 1;
     }
 }

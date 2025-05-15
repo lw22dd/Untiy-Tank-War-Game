@@ -19,7 +19,7 @@ public class BasePanel<T> : MonoBehaviour where T : class
             //在Awake中初始化的原因是
             //我们的面板脚本在场景上肯定只会挂载一次
             //那么我们可以在这个脚本的生命周期函数的Awake中
-            //直接记录场景上唯一的这个脚本
+            //直接记录场景上唯一的这个脚本，这里的静态字段直接指向实例
             instance = this as T;
         
     }
