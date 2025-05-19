@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerObj : TankBaseObj
 {
-    // Start is called before the first frame update
+    public WeaponObj nowWeapon;
+
     void Start()
     {
     }
@@ -29,6 +31,9 @@ public class PlayerObj : TankBaseObj
 
     public override void Fire()
     {
-        throw new System.NotImplementedException();
+        if (nowWeapon)
+        {
+            nowWeapon.Fire();
+        }
     }
 }
