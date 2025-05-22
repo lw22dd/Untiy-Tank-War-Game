@@ -67,9 +67,11 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Weapon\BulletObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BKMusic.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Reward\WeaponReward.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUITexture.cs" />
     <Compile Include="Assets\Scripts\实践小项目\PlayerPrefsDataMgr\PlayerPrefsDataMgr.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\AutoDestroy.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\TankBaseObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUISlider.cs" />
     <None Include="Assets\ArtRes\TDSTK\Model\BlendColorsOverlayTexture.shader" />
