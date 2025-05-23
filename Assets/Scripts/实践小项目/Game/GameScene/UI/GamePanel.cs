@@ -32,8 +32,7 @@ public class GamePanel : BasePanel<GamePanel>
             // 暂停游戏
             Time.timeScale = 0;
         };
-        UpdateScore(100);
-        UpdateHp(80,100);
+        UpdateScore(100);//初始化分数100
     }
 
     // Update is called once per frame

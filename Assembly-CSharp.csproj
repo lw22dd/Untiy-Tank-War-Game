@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BeginPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\Data\GameDataMgr.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\RankPanel.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\CubeObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BasePanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\RotateObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\GamePanel.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUITexture.cs" />
     <Compile Include="Assets\Scripts\实践小项目\PlayerPrefsDataMgr\PlayerPrefsDataMgr.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Reward\PropsReward.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\AutoDestroy.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\TankBaseObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUISlider.cs" />

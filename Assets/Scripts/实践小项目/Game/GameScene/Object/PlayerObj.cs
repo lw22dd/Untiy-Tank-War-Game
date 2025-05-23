@@ -10,6 +10,8 @@ public class PlayerObj : TankBaseObj
 
     void Start()
     {
+        GamePanel.Instance.UpdateHp(hp, maxHp);
+
     }
 
     // Update is called once per frame
@@ -55,5 +57,15 @@ public class PlayerObj : TankBaseObj
         //设置武器的拥有者，为了使得子弹携带Tank的攻击力数值
         nowWeapon.SetOwner(this);
         
+    }
+
+    public override void Dead()
+    {
+        base.Dead();
+    }
+    public override void Wounded(TankBaseObj orther)
+    {
+        base.Wounded(orther);
+        GamePanel.Instance.UpdateHp(hp, maxHp);
     }
 }
