@@ -55,6 +55,7 @@
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIToggleGroup.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIInput.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\QuitPanel.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\Tower.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\PlayerObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BeginPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\Data\GameDataMgr.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\GamePanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUILabel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Base\CustomGUIPos.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\MoveMonster.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Weapon\BulletObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\BKMusic.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\CameraMove.cs" />

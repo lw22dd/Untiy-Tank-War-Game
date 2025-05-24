@@ -21,8 +21,15 @@ public class BulletObj : MonoBehaviour
     //和物体碰撞触发
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Cube"))
+        // 子弹射击到怪物和方块都应该销毁子弹
+        if (other.CompareTag("Cube")|| 
+            other.CompareTag("Monster")&&  owner.CompareTag("Player")|| 
+            owner.CompareTag("Monster")&&  other.CompareTag("Player"))
         {
+            if (other.GetComponent<TankBaseObj>())
+            {
+                other.GetComponent<TankBaseObj>().Wounded(owner);//传入子弹拥有者进行数值计算
+            }
             if (effectObj)
             {
                 GameObject effect = Instantiate(effectObj, transform.position, Quaternion.identity);
