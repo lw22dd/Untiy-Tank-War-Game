@@ -52,6 +52,7 @@
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIButton.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Weapon\WeaponObj.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Base\CustomGUIRoot.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\WinPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIToggleGroup.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUIInput.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\QuitPanel.cs" />
@@ -74,9 +75,11 @@
     <Compile Include="Assets\Scripts\实践小项目\Game\BeginScene\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUITexture.cs" />
     <Compile Include="Assets\Scripts\实践小项目\PlayerPrefsDataMgr\PlayerPrefsDataMgr.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\UI\LostPanel.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Reward\PropsReward.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\AutoDestroy.cs" />
     <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\TankBaseObj.cs" />
+    <Compile Include="Assets\Scripts\实践小项目\Game\GameScene\Object\EndPoint.cs" />
     <Compile Include="Assets\Scripts\实践小项目\CustomGUI\Control\CustomGUISlider.cs" />
     <None Include="Assets\ArtRes\TDSTK\Model\BlendColorsOverlayTexture.shader" />
     <Reference Include="UnityEngine">

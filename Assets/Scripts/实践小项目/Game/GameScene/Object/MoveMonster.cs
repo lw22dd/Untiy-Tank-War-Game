@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MoveMonster : TankBaseObj
 {
@@ -14,6 +16,14 @@ public class MoveMonster : TankBaseObj
     //开火
     public Transform[] shootPos;
     public GameObject bullet;
+
+    public Texture maxHPBK;
+    public Texture curHPBK;
+    
+    public Rect maxHPBKRect;//最大血条的位置
+    public Rect curHPBKRect;
+    
+    public float showTime = 0;
     
     void Start()
     {
@@ -86,5 +96,38 @@ public class MoveMonster : TankBaseObj
         audio.volume = GameDataMgr.Instance.MusicData.soundValue;
         audio.mute = !GameDataMgr.Instance.MusicData.isOpenSound;
         audio.Play();
+    }
+
+    private void OnGUI()
+    {
+        if (showTime > 0)
+        { 
+            showTime -= Time.deltaTime;
+            //画图 画血条
+            //将怪物位置世界坐标转化为屏幕坐标
+            Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+            //屏幕位置转化为GUI的坐标位置
+            
+            screenPos.y = Screen.height  - screenPos.y;
+            //然后绘制
+            maxHPBKRect.x = screenPos.x- 100;
+            maxHPBKRect.y = screenPos.y - 50 ;
+            maxHPBKRect.width = 200;
+            maxHPBKRect.height = 30;
+            GUI.DrawTexture(maxHPBKRect, maxHPBK);
+        
+            curHPBKRect.x = screenPos.x - 100;
+            curHPBKRect.y = screenPos.y - 50 ;
+            curHPBKRect.width = (float)hp / maxHp * 200f;//200f是血条的宽度，计算当前血量占比赋值宽度
+            curHPBKRect.height = 30;
+            GUI.DrawTexture(curHPBKRect, curHPBK);//在curHPBKRect这个区域绘制curHPBK
+        }
+        
+    }
+    public override void Wounded(TankBaseObj orther)
+    {
+        base.Wounded(orther);
+        showTime = 3;//当受伤的时候，将血条显示3秒，配合OnGUI的条件判断实现
+        
     }
 }

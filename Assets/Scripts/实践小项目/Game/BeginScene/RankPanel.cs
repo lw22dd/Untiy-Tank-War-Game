@@ -44,13 +44,13 @@ public class RankPanel : BasePanel<RankPanel>
     {
         // 先得到原有的数据
         List<RankInfo> rankList = GameDataMgr.Instance.RankData.rankList;
-
+        
         for (int i = 1; i <= rankList.Count; i++)
         {
             labelPlayer[i - 1].content.text = rankList[i - 1].playerName;
             labelScore[i - 1].content.text = rankList[i - 1].score.ToString();
-            // 我们使用秒来记录单位时间，但是显示成string要转换成时分秒
-            int time = rankList[i - 1].time;
+            // 我们使用秒来记录单位时间，但是显示成string要转换成时分秒，同时为了显示方便转化为int
+            int time = (int)rankList[i - 1].time;
             labelTime[i - 1].content.text = (time / 3600).ToString() + ":" + (time % 3600 / 60).ToString() + ":" +
                                             (time % 60).ToString();
         }

@@ -61,7 +61,11 @@ public class PlayerObj : TankBaseObj
 
     public override void Dead()
     {
-        base.Dead();
+        //这里不执行父类的死亡因为玩家坦克摄像机是它的子对象如果执行父类死亡
+        //会把玩家坦克从场景上移除那么久间接的移除了摄像机
+        //base.Dead();
+        //应该处理失败逻辑显示失败面板即可
+        LostPanel.Instance.ShowMe();
     }
     public override void Wounded(TankBaseObj orther)
     {

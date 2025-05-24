@@ -66,7 +66,7 @@ public class GameDataMgr
         PlayerPrefsDataMgr.Instance.SaveData(MusicData, "music");
     }
     // 排行榜中添加数据
-    public void AddRankInfo(string playerName,int score,int time)
+    public void AddRankInfo(string playerName,int score,float time)
     {
         RankInfo rankInfo = new RankInfo(playerName,score,time);
         RankData.rankList.Add(rankInfo);

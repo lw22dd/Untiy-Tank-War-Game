@@ -12,6 +12,8 @@ public class BeginPanel : BasePanel<BeginPanel>
     public CustomGUIButton btnRank;
     void Start()
     {
+        //目的是因为方便控制坦克的头部转向所以锁定鼠标在窗口内避免鼠标出去不好控制
+        Cursor.lockState=CursorLockMode.Confined;
         //点击按钮打开对应面板
         btnBegin.clickEvent +=(() =>
         {

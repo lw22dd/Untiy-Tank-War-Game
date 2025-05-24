@@ -6,8 +6,8 @@ public class RankInfo
 {
     public string playerName;
     public int score;
-    public int time;
-    public RankInfo(string playerName,int score,int time)
+    public float time;
+    public RankInfo(string playerName,int score,float time)
     {
         this.playerName = playerName;
         this.score = score;

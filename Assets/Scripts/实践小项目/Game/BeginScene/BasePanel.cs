@@ -37,9 +37,13 @@ public class BasePanel<T> : MonoBehaviour where T : class
     public virtual void ShowMe()
     {
         this.gameObject.SetActive(true);
+        Time.timeScale = 0;
+
     }
     public virtual void HideMe()
     {
         this.gameObject.SetActive(false);
+        Time.timeScale = 1;
+
     }
 }
